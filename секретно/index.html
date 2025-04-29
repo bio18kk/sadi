@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShI•work | Продажа Telegram Звёзд и Premium</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">ShI•work</div>
+      <nav>
+        <ul>
+          <li><a href="#stars">Звёзды</a></li>
+          <li><a href="#premium">Premium</a></li>
+          <li><a href="#cart"><i class="fas fa-shopping-cart"></i> Корзина (<span id="cart-count">0</span>)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Купи <i class="fa-brands fa-telegram"></i> Telegram Звёзды и Premium за $</h1>
+      <p>Выгодно. Надёжно. Моментально.</p>
+      <a href="#stars" class="btn animate">Купить сейчас</a>
+    </div>
+  </section>
+
+  <section class="section" id="stars">
+    <div class="container">
+      <h2>Telegram Звёзды</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>100 звёзд</h3>
+          <p>$1.99</p>
+          <button onclick="addToCart('100 звёзд', 1.99)">Добавить</button>
+        </div>
+        <div class="card">
+          <h3>500 звёзд</h3>
+          <p>$8.99</p>
+          <button onclick="addToCart('500 звёзд', 8.99)">Добавить</button>
+        </div>
+        <div class="card">
+          <h3>1000 звёзд</h3>
+          <p>$16.99</p>
+          <button onclick="addToCart('1000 звёзд', 16.99)">Добавить</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="premium">
+    <div class="container">
+      <h2><i class="fas fa-star"></i> Telegram Premium</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>1 месяц</h3>
+          <p>$2.99</p>
+          <button onclick="addToCart('Premium 1 мес', 2.99)">Добавить</button>
+        </div>
+        <div class="card">
+          <h3>3 месяца</h3>
+          <p>$8.49</p>
+          <button onclick="addToCart('Premium 3 мес', 8.49)">Добавить</button>
+        </div>
+        <div class="card">
+          <h3>12 месяцев</h3>
+          <p>$29.99</p>
+          <button onclick="addToCart('Premium 12 мес', 29.99)">Добавить</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="cart">
+    <div class="container">
+      <h2>Корзина</h2>
+      <ul id="cart-items"></ul>
+      <p>Итого: <span id="total-price">$0.00</span></p>
+      <button class="btn" onclick="checkout()">Оплатить</button>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 ShI•work. Связь: <a href="https://t.me/shiwork">@shiwork</a></p>
+    </div>
+  </footer>
+</body>
+</html>
